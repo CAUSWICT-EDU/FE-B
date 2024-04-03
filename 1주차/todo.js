@@ -86,3 +86,19 @@ function fixToDo() {
     const getTar = getTarChild.parentElement.parentElement;
     getTar.innerHTML = "<input placeholder='오늘의 계획은 무억인가요?'>"
 }
+/*
+function setClock() {
+    const currentDate = new Date();
+    const currentDate_hour = currentDate.getHoursO();
+    const currentDate_minute = currentDate.getMinutes();
+    const currentDate_seconds = currentDate.getSeconds();
+
+    if(currentDate_seconds < 10) {
+        currentDate_seconds = "0" + currentDate_seconds;
+    }
+
+    const currTime = currentDate_hour + ":" + currentDate_minute + ":" + currentDate_seconds;
+    document.getElementById("getClock").appendChild(currTime);
+    setInterval(setClock, 1000);
+}
+*/
