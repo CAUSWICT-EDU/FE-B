@@ -79,3 +79,10 @@ function clickAddBtn() {
     const getTar = getTarChild.parentElement.parentElement;
     getTar.style.display = "none";
 }
+
+function fixToDo() {
+    const tarId = this.id;
+    const getTarChild = document.getElementById(tarId);
+    const getTar = getTarChild.parentElement.parentElement;
+    getTar.innerHTML = "<input placeholder='오늘의 계획은 무억인가요?'>"
+}
