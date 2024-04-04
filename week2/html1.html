@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="K">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1주차 과제</title>
+    <link rel="stylesheet" href="CSS.css" />
+  </head>
+  <body>
+    <div class="todo-container">
+      <form id="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="오늘은 무엇을 할까요?"
+        />
+        <button type="submit" id="submit-btn">추가</button>
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <template id="todo-template">
+      <li class="todo-item">
+        <div>
+          <span class="item-title"></span>
+          <button class="edit-btn">수정</button>
+          <button class="delete-btn">삭제</button>
+        </div>
+      </li>
+    </template>
+
+    <script src="ts.js"></script>
+  </body>
+</html>
