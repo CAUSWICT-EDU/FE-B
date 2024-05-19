@@ -1,0 +1,12 @@
+.getGenrePage {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.certificateGenre {
+    border-bottom: 1px solid black;
+}
+
+#GenreTitle {
+    font-style: italic;
+}
