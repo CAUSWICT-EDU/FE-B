@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     width: 30vw;
     height: 80vh;
+    background-image: url('https://source.unsplash.com/random/400x500');
 }
 
 .todo_input_container {
@@ -29,7 +30,16 @@ body {
     justify-content: space-between;
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(255, 134, 83);
+    border-color: black;
     margin: 10px;
     padding: 5px;
+    background-color: white;
+}
+
+#getClock {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+    font-size: 50px;
 }

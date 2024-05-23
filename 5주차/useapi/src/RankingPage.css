@@ -1,0 +1,21 @@
+.getRank {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.sortedRankList {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: 40%;
+}
+
+#getRate {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#getTitle {
+    font-weight: bold;
+    font-style: italic;
+}

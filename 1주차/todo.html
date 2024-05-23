@@ -4,6 +4,31 @@
         <link href="todo.css" rel="stylesheet"/>
     </head>
     <body>
+        <div id="getClock">
+            <script>
+                const setClock = function() {
+                    const currentDate = new Date();
+                    const currentDate_hour = currentDate.getHours();
+                    let currentDate_minute = currentDate.getMinutes();
+                    let currentDate_seconds = currentDate.getSeconds();
+
+                    if(currentDate_seconds < 10) {
+                        currentDate_seconds = "0" + currentDate_seconds;
+                    }
+                    
+                    if(currentDate_minute < 10) {
+                        currentDate_minute = "0" + currentDate_minute;
+                    }
+
+                    const currTime = currentDate_hour + ":" + currentDate_minute + ":" + currentDate_seconds;
+                    document.getElementById("getClock").innerHTML = currTime;
+                    
+                }
+                
+                setInterval(setClock, 1000);
+            </script>
+        </div>
+
         <div class="todo_body">
             <div id="todoBody" class="todo_input_container">
                 <input id="todo_input" type="text" placeholder="오늘의 계획은 무엇인가요?" onkeydown="enterKey()">
