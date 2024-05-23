@@ -6,6 +6,9 @@ import RankingPage from "./RankingPage";
 import YearPage from "./YearPage";
 import GenrePage from "./GenrePage";
 import MainPage from "./MainPage";
+import ReviewHome from "./ReviewHome";
+import ReviewDetail from "./ReviewDetail";
+import SetReview from "./SetReview";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -43,6 +46,14 @@ function App() {
             <li className='moveLink' id='GoToGenre'>
               <Link to="/genre">Genre</Link>
             </li>
+            <li className='reviewHomeLink'>
+              <Link to="/reviewhome">Review</Link>
+            </li>
+            <li className='reviewHomeLink'>
+              <Link to="/setreview">Write Review</Link>
+            </li><li className='reviewHomeLink'>
+              <Link to="/reviewdetail">View Review</Link>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -50,6 +61,9 @@ function App() {
           <Route path="/year" element={<YearPage movies={movies} />} />
           <Route path="/genre" element={<GenrePage movies={movies} />} />
           <Route path="/main" element={ <MainPage movies={movies} />} />
+          <Route path="/reviewhome" element={ <ReviewHome movies={movies}/>} />
+          <Route path='./setreview' element={ <SetReview />} />
+          <Route path='./reviewdetail' element={ < ReviewDetail />} />
         </Routes>
       </div>
     </Router>
