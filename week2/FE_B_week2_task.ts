@@ -37,7 +37,7 @@ function loadTask(storageData : any)
     saveItemsFn();
 
 }
-    
+
 
 function addTask(): void{
     let inputBoxValue = <HTMLInputElement>document.getElementById("input-box");
